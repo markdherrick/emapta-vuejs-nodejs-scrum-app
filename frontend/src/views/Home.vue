@@ -230,29 +230,6 @@ export default {
           this.item.id = response.data.data.id;
         });
     },
-    // submitEditItem(){
-    //   var data = {
-    //     type: this.item.type.toLowerCase(),
-    //     description: this.item.description,
-    //   };
-
-    //   var config = {
-    //     method: "patch",
-    //     url: "http://localhost:8000/api/agile/" + id,
-    //     data: data,
-    //   };
-
-    //   this.axios(config).then((response) => {
-    //     console.log(response);
-    //     this.item.type = "Principle";
-    //     this.item.description = "";
-    //     setTimeout(() => {
-    //       this.overlay = false;
-    //       this.formDialog.show = false;
-    //     }, 1000);
-    //     this.getAgileValuesAndPrinciples();
-    //   });
-    // },
     deleteItem(id) {
       this.axios
         .delete("http://localhost:8000/api/agile/" + id)
