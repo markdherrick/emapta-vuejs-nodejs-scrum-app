@@ -49,8 +49,6 @@ Agile.update = (params, result) => {
            description = COALESCE(?,description)
            WHERE id = ?`;
 
-  console.log(params);
-
   db.run(
     sql,
     [params.params.type, params.params.description, params.id],
