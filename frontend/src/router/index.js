@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home1.vue";
+import Home from "../views/Index.vue";
 
 Vue.use(VueRouter);
 
