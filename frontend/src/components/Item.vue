@@ -14,8 +14,18 @@
         </v-list-item-title>
 
         <v-list-item-icon>
-          <v-icon @click="editItem(id, type, description)">mdi-pencil</v-icon>
-          <v-icon @click="deleteItem(id)">mdi-close</v-icon>
+          <v-button
+            icon
+            data-button-name="edit-button"
+            @click="editItem(id, type, description)"
+            ><v-icon>mdi-pencil</v-icon></v-button
+          >
+          <v-button
+            icon
+            data-button-name="delete-button"
+            @click="deleteItem(id)"
+            ><v-icon>mdi-close</v-icon></v-button
+          >
         </v-list-item-icon>
       </v-list-item>
     </v-list>
